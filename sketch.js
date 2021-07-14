@@ -42,13 +42,11 @@ function setup() {
   
   console.log("Hello" + 5);
   
-  score = 0;
 }
 
 function draw() {
   background(180);
-  text("Score: "+ score, 500,50);
-  score = score + Math.round(frameCount/60);
+  
   
   
   if(keyDown("space")&& trex.y >= 100) {
